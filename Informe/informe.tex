@@ -1,0 +1,103 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+\begin{document}
+
+\title{Investigación en el municipio Plaza de la Revolución}
+\author{Jennifer Rodríguez Moronta}
+\date{\today}
+
+\maketitle
+
+\section{Introducción}
+
+Al realizar esta investigación, pude obtener valiosos conocimientos sobre las tendencias 
+de precios, identificar cambios de oferta y demanda. Al hacer 
+visualizaciones de la información recolectada, pude representar los datos de una manera más
+intuitiva y comprensible. Las visualizaciones te permiten identificar patrones, comparar precios y
+observar cambios estacionales o económicos que puedan influir en los precios. Mi investigación se enfocó 
+en el municipio Plaza de la Revolución, esta tarea no fue fácil, pero me 
+ayudó a crecer como estudiante. Después de caminar varios días buscando agros y cafeterías, de
+ soportar los malos tratos de los dueños de los lugares ya que no entendían nuestra investigación, 
+ pude llegar a la recopilación de los siguientes datos.
+
+\section{General}
+Para cargar los datos recopilados en el JSON hago uso del siguiente fragmento de código que 
+utiliza la librería \texttt{json} de Python 
+\begin{lstlisting}
+with open(`CD_dataBase001.json', `r') as file:
+    # Load JSON data from file
+    data = json.load(file)
+\end{lstlisting}
+
+\section{Cerveza}
+
+Lo primero es almacenar en listas la información recopilada en el JSON sobre la cerveza. Luego 
+utilizando toda esta información podemos representar los datos en gráficas; para el proceso de graficar
+utilicé la librería \texttt{matplotlib}. Las gráficas que realicé fueron sobre:
+
+\begin{itemize}
+    \item \textbf{Porciento de alcohol en cada marca:} las cervezas tienen en su mayoría aproximadamente 5\% de alcohol, aunque algunas tienen 
+más. Analizar el \% de alcohol resulta el principal control de calidad y estabilidad de las bebidas, en la recopilación de la 
+información pude observar como las personas se fijaban demasiado en el \% de alcohol de las cervezas 
+antes de comprarla, por eso la decisión de graficar el \% de alcohol en cada marca.
+    \item \textbf{Contenido en ml por marca:} se hace necesario saber la cantidad
+    exacta de ml de una cerveza te permite tener un mejor control sobre su consumo. Si estás tratando 
+    de moderar la cantidad de alcohol que consumes, conocer la cantidad precisa te ayuda a establecer 
+    límites y controlar la ingesta. Al conocer el contenido en ml de una cerveza, puedes estimar el 
+    número de calorías que estás consumiendo.
+    \item \textbf{Países de procedencia de la cerveza:} al visualizar las estadísticas de la cantidad de marcas de cerveza por países, puedes obtener una 
+idea de la variedad de opciones disponibles en diferentes regiones. Esto te permite explorar 
+diferentes estilos de cerveza, sabores y perfiles de sabor que podrían ser de su interés. 
+Al analizar las estadísticas, puedes identificar las marcas de cerveza más populares en cada país. 
+Esto te brinda información sobre las preferencias de los consumidores y las tendencias actuales en 
+la industria cervecera.
+    \item \textbf{Promedio de Precios de cada cerveza:} ajustar tu presupuesto y tomar decisiones informadas al momento de comprar. Si tienes un presupuesto 
+ limitado, puedes optar por marcas más económicas. Por otro lado, si estás dispuesto a gastar un poco 
+ más, puedes elegir marcas de mayor calidad o con características específicas que te interesen. 
+ Analizar el promedio de precios también te ayuda a evaluar la relación entre la calidad y el precio 
+ de cada marca, puedes comparar los precios con la reputación y la satisfacción general de los 
+ consumidores para determinar si una marca en particular ofrece un buen valor por el dinero que pagas.
+\end{itemize}
+
+\section{Cebolla}
+
+Lo primero es almacenar en listas la información recopilada en el JSON sobre la cebolla. Luego 
+utilizando toda esta información podemos representar los datos en gráficas; para el proceso de graficar
+utilicé la librería \texttt{matplotlib}. Las gráficas que realicé fueron sobre:
+
+\begin{itemize}
+    \item \textbf{Promedio de Precios por Tipo de Cebolla:} graficar el promedio de precios de la cebolla puede proporcionar 
+    información valiosa sobre su costo en el mercado, esto te permite planificar tus compras de manera más efectiva. Visualizar el promedio 
+de precios de la cebolla te permite comparar los precios de diferentes establecimientos o proveedores.
+ Puedes identificar dónde puedes encontrar la cebolla a un precio más competitivo y tomar decisiones 
+ en función de tus necesidades y preferencias.
+
+\end{itemize}
+
+\section{Malta}
+
+Lo primero es almacenar en listas la información recopilada en el JSON sobre la malta. Luego 
+utilizando toda esta información podemos representar los datos en gráficas; para el proceso de graficar
+utilicé la librería \texttt{matplotlib}. Las gráficas que realicé fueron sobre:
+
+\begin{itemize}
+    \item \textbf{Contenido de ml por marca:} al graficar el contenido en ml de cada malta, puedes comparar diferentes marcas y lotes para evaluar 
+la consistencia en la cantidad de malta proporcionada.
+
+\item \textbf{Países de procedencia de la Malta:} al graficar las estadísticas de la cantidad de marcas de malta por países puedes tener una idea de la
+ diversidad de opciones que existen, esto te permite explorar diferentes sabores, estilos y perfiles 
+ de malta.
+
+ \item \textbf{Promedio de Precios de cada Malta:} al graficar el promedio de precios por cada marca de malta, puedes tener una idea clara de cuánto
+ podrías gastar en tu compra de malta. Hacer este análisis te permite realizar comparaciones y 
+ evaluar las opciones disponibles en el mercado, puedes identificar marcas de malta que ofrecen 
+ una buena relación calidad-precio y descubrir si una marca en particular se considera más cara o
+ más asequible en comparación con otras.
+
+\end{itemize}
+
+
+\end{document}
