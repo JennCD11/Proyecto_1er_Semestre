@@ -9,11 +9,13 @@ run(){
     echo "Compilando y generando el PDF del informe..."
     cd Informe 
     latexmk -pdf informe.tex
+    latexmk -pdf informe.tex
  }
 
  slides(){ 
     echo "Compilando y generando el PDF de la presentacion..."
     cd Presentación
+    latexmk -pdf presentacion.tex
     latexmk -pdf presentacion.tex
  }
 
